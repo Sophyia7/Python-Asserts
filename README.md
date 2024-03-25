@@ -9,7 +9,7 @@ This repository contains use cases for using Python asserts with Selenium for au
 ## Prerequisites
 
 - Python 3.8 and above
-- LambdaTest Selenium Remote Driver
+- Should have an account on [LambdaTest](https://www.lambdatest.com)
 - unittest module
 
 ## Setup
