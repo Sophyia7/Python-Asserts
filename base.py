@@ -23,14 +23,14 @@ class SampleTest(unittest.TestCase):
             "w3c": True,
             "browserName": "Chrome",
             "browserVersion": "latest",
-            "selenium_version": "4.0.0"
+            "selenium_version": "latest",
         }
         
         browser_options = ChromeOptions()
         browser_options.set_capability('LT:Options', lt_options)
 
         self.driver = webdriver.Remote(
-            command_executor="http://hub.lambdatest.com:80/wd/hub",
+            command_executor=f"https://{username}:{access_key}@hub.lambdatest.com/wd/hub",
             options=browser_options)
 
 
