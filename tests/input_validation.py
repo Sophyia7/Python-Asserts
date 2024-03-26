@@ -19,7 +19,7 @@ class InputValidation(SampleTest):
             password = driver.find_element(By.ID, "input-password")
 
             # Input some test data
-            email.send_keys("test@example.com")
+            email.send_keys("testexample.com")
             password.send_keys("testpassword")
 
             # Validate the input
