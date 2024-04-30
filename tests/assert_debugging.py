@@ -15,6 +15,7 @@ class DebugTest(SampleTest):
             self.assertIn("expected text", element.text)
         except NoSuchElementException:
             assert False, "Element not found"
+            self.driver.execute_script("lambda-status=failed")
 
 if __name__ == "__main__":
     unittest.main()   
